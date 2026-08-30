@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>iGraded — Academic Command Center</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E5E4C'/%3E%3Cpath d='M32 16 10 26l22 10 22-10-22-10z' fill='%233FD9AE'/%3E%3Cpath d='M18 33v10c0 3 6.3 7 14 7s14-4 14-7V33l-14 6.4L18 33z' fill='%23E8F1EC'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" rel="stylesheet" />
+    <script>
+      try {
+        var raw = localStorage.getItem("igraded:v1");
+        var t = raw && JSON.parse(raw).settings && JSON.parse(raw).settings.theme;
+        document.documentElement.dataset.theme = t === "light" ? "light" : "dark";
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
